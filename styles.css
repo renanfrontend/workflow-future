@@ -14,22 +14,32 @@ header {
 header h1 {
     margin: 0;
     font-size: 2em;
+    color: #7f70d4;
 }
 
 main {
     padding: 20px;
+    background-color: #1f1f1f;
 }
 
-#workflow {
-    max-width: 800px;
+.section-bg {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+#workflow, #projects {
+    max-width: auto;
     margin: 0 auto;
 }
 
 .step {
-    background-color: #1f1f1f;
+    background-color: rgba(31, 31, 31, 0.8);
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
+    color: #8031a7;
 }
 
 .step h3 {
