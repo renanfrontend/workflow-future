@@ -23,4 +23,5 @@ function prevSlide() {
 
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
+    setInterval(nextSlide, 3000); // Avançar automaticamente a cada 3 segundos
 });
