@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Página carregada');
+document.addEventListener('DOMContentLoaded', function() {
+    // Adicione qualquer código JavaScript personalizado aqui
 });
