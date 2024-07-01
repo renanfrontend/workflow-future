@@ -14,7 +14,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2em;
-    color: #7f70d4;
+    color: #7f7e86;
 }
 
 main {
@@ -39,7 +39,7 @@ main {
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    color: #8031a7;
+    color: #7f7e86;
 }
 
 .step h3 {
