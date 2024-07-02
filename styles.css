@@ -1,81 +1,71 @@
+
+/* styles.css */
+
+/* Tema Escuro */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 header {
     background-color: #1f1f1f;
-    padding: 20px;
-    text-align: center;
+    padding: 1em;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #7f7e86;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-main {
-    padding: 20px;
-    background-color: #1f1f1f;
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background-color 0.3s;
 }
 
-.section-bg {
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
+nav ul li a:hover {
+    background-color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: #333333;
+    border: none;
     color: #ffffff;
 }
 
-#workflow, #projects {
-    max-width: auto;
-    margin: 0 auto;
+form button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #444444;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.step {
-    background-color: rgba(31, 31, 31, 0.8);
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    color: #7f7e86;
+form button:hover {
+    background-color: #555555;
 }
 
-.step h3 {
-    margin-top: 0;
-}
-
-.step ul {
-    padding-left: 20px;
-}
-
-footer {
-    background-color: #1f1f1f;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 1.5em;
+/* Menu Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .step {
-        padding: 10px;
-    }
-}
-
-.carousel-item img {
-    height: 500px;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
 }
